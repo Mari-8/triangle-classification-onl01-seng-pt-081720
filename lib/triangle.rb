@@ -12,9 +12,12 @@ class Triangle
   
   
   def valid_triangle
-    if @l_one + @l_two > @l_three && @l_one + @l_three > @l_two && @l_two + @l_three > @l_one || @l_one.positive? && @l_two.positive? && @l_three.positive? 
+     @l_one + @l_two > @l_three && @l_one + @l_three > @l_two && @l_two + @l_three > @l_one 
    end
-  end 
+  
+  def valid_triangle_two
+    @l_one.positive? && @l_two.positive? && @l_three.positive? 
+  end
   
   def kind 
      @all_sides.sort!
