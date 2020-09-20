@@ -32,8 +32,6 @@ class Triangle
     elsif @l_one == 0 && @l_two == 0 && @l_three == 0
       begin 
        raise TriangleError
-       rescue TriangleError 
-       puts error.message
      end 
     else 
       :isosceles  
