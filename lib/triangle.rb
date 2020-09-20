@@ -12,7 +12,7 @@ class Triangle
   
   
   def valid_triangle
-    if x + y > z && x + z > y && y + z > x || x.positive? && y.positive? && z.positive? 
+    if @l_one + @l_two > @l_three && @l_one + @l_three > @l_two && @l_two + @l_three > @l_one || @l_one.positive? && @l_two.positive? && @l_three.positive? 
    end
   end 
   
