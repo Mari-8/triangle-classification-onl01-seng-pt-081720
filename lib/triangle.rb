@@ -22,7 +22,11 @@ class Triangle
     if valid_triangle == true && valid_triangle2 == true 
       puts true 
     else 
+     begin
       raise TriangleError 
+      rescue TriangleError
+      puts error.message 
+    end 
     end 
   
     
