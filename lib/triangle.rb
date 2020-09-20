@@ -21,7 +21,7 @@ class Triangle
   
   def kind 
      @all_sides.sort!
-    if valid_triangle 
+    if valid_triangle || valid_triangle_two 
       puts true 
     else 
       raise TriangleError 
