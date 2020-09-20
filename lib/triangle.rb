@@ -19,7 +19,7 @@ class Triangle
   
   def kind 
      @all_sides.sort!
-    if valid_triangle == true && valid_triangle2 == true 
+    if valid_triangle && valid_triangle2 
       puts true 
     else 
      begin
