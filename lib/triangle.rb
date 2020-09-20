@@ -13,8 +13,7 @@ class Triangle
   
   def valid_triangle
     if x + y > z && x + z > y && y + z > x == true || x.positive? && y.positive? && z.positive? 
-      
-    
+   end
   end 
   
   def kind 
@@ -24,14 +23,14 @@ class Triangle
     else 
       raise TriangleError 
     end 
+  end 
   
     if @l_one == @l_two && @l_two == @l_three && @l_three == @l_one
       :equilateral 
     elsif @l_one != @l_two && @l_two != @l_three && @l_three != @l_one
      :scalene
     else 
-      :isosceles  
-    end 
+      :isosceles
   end 
 end 
   
@@ -47,7 +46,6 @@ end
     def message 
      "this triangle is invalid"
    end 
-  end
   
   
   
