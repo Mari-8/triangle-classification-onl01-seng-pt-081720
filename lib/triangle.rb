@@ -22,6 +22,7 @@ class Triangle
   
   def kind 
     if valid_triangle && valid_triangle_two 
+      binding.pry
       puts true 
     else 
       raise TriangleError 
