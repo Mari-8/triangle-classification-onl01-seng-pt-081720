@@ -21,7 +21,7 @@ class Triangle
   end
   
   def kind 
-    if valid_triangle || valid_triangle_two 
+    if valid_triangle && valid_triangle_two 
       puts true 
     else 
       raise TriangleError 
