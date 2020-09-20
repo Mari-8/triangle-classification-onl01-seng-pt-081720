@@ -27,7 +27,7 @@ class Triangle
     else 
       raise TriangleError 
     end 
-  end 
+ 
   
     if @l_one == @l_two && @l_two == @l_three && @l_three == @l_one
       :equilateral 
