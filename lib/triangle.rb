@@ -29,10 +29,6 @@ class Triangle
       :equilateral 
     elsif @l_one != @l_two && @l_two != @l_three && @l_three != @l_one
      :scalene
-    elsif @l_one == 0 && @l_two == 0 && @l_three == 0
-      begin 
-       raise TriangleError
-     end 
     else 
       :isosceles  
     end 
