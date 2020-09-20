@@ -22,14 +22,9 @@ class Triangle
     if valid_triangle && valid_triangle2 
       puts true 
     else 
-     begin
       raise TriangleError 
-      rescue TriangleError
-      puts error.message 
-    end 
     end 
   
-    
     if @l_one == @l_two && @l_two == @l_three && @l_three == @l_one
       :equilateral 
     elsif @l_one != @l_two && @l_two != @l_three && @l_three != @l_one
