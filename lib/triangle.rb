@@ -8,6 +8,7 @@ class Triangle
     @l_two = l_two 
     @l_three = l_three
     @all_sides = [@l_one, @l_two, @l_three]
+    @all_sides.sort!
   end 
   
   
@@ -20,7 +21,6 @@ class Triangle
   end
   
   def kind 
-     @all_sides.sort!
     if valid_triangle || valid_triangle_two 
       puts true 
     else 
