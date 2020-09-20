@@ -34,17 +34,17 @@ class Triangle
   end 
 end 
   
-  def valid_triangle 
-     x + y > z && x + z > y && y + z > x 
-  end 
+ # def valid_triangle 
+ #    x + y > z && x + z > y && y + z > x 
+ # end 
   
-  def valid_triangle_two 
-    x.positive? && y.positive? && z.positive?
-  end 
+  #def valid_triangle_two 
+  #  x.positive? && y.positive? && z.positive?
+ # end 
   
   class TriangleError < StandardError 
     def message 
-     "this triangle is invalid!!!"
+     "this triangle is invalid"
    end 
   
   
